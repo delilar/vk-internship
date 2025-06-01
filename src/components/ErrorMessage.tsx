@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FC } from 'react';
 import { X, AlertCircle } from 'lucide-react';
 
 interface ErrorMessageProps {
@@ -6,7 +6,7 @@ interface ErrorMessageProps {
   onClose: () => void;
 }
 
-const ErrorMessage: React.FC<ErrorMessageProps> = ({ message, onClose }) => {
+const ErrorMessage: FC<ErrorMessageProps> = ({ message, onClose }) => {
   return (
     <div className="bg-red-50 border border-red-200 rounded-md p-4 flex items-center justify-between">
       <div className="flex items-center">

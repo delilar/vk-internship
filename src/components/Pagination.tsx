@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FC } from 'react';
 
 interface PaginationProps {
   currentPage: number;
@@ -9,7 +9,7 @@ interface PaginationProps {
   endIndex: number;
 }
 
-const Pagination: React.FC<PaginationProps> = ({
+const Pagination: FC<PaginationProps> = ({
   currentPage,
   totalPages,
   onPageChange,

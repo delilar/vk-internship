@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
+import type { FC } from 'react';
 import ItemForm from './components/ItemForm';
 import ItemTable from './components/ItemTable';
 import Pagination from './components/Pagination';
@@ -8,7 +9,7 @@ import ErrorMessage from './components/ErrorMessage';
 import { ApiService } from './services/api';
 import type { FormData, TableItem } from './types';
 
-const App: React.FC = () => {
+const App: FC = () => {
   const [items, setItems] = useState<TableItem[]>([]);
   const [editingItem, setEditingItem] = useState<TableItem | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
@@ -83,6 +84,7 @@ const App: React.FC = () => {
       return (
         item.name.toLowerCase().includes(term) ||
         item.email.toLowerCase().includes(term) ||
+        item.phone.toLowerCase().includes(term) ||
         item.role.toLowerCase().includes(term)
       );
     });
@@ -98,7 +100,7 @@ const App: React.FC = () => {
   }, [searchTerm]);
 
   return (
-    <div className="max-w-5xl mx-auto p-6 space-y-8">
+    <div className="max-w-6xl mx-auto p-6 space-y-8">
       <h1 className="text-2xl font-bold text-center">Управление пользователями</h1>
 
       {error && <ErrorMessage message={error} onClose={() => setError(null)} />}

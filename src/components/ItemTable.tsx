@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FC } from 'react';
 import { Edit2, Trash2 } from 'lucide-react';
 import type { TableItem } from '../types';
 
@@ -10,7 +10,7 @@ interface ItemTableProps {
   loading?: boolean;
 }
 
-const ItemTable: React.FC<ItemTableProps> = ({ 
+const ItemTable: FC<ItemTableProps> = ({ 
   items, 
   onEdit, 
   onDelete, 
@@ -45,6 +45,7 @@ const ItemTable: React.FC<ItemTableProps> = ({
             <th className="border px-4 py-3">ID</th>
             <th className="border px-4 py-3">Имя</th>
             <th className="border px-4 py-3">Email</th>
+            <th className="border px-4 py-3">Телефон</th>
             <th className="border px-4 py-3">Роль</th>
             <th className="border px-4 py-3">Статус</th>
             <th className="border px-4 py-3">Дата создания</th>
@@ -57,6 +58,7 @@ const ItemTable: React.FC<ItemTableProps> = ({
               <td className="border px-4 py-3">{item.id}</td>
               <td className="border px-4 py-3">{item.name}</td>
               <td className="border px-4 py-3">{item.email}</td>
+              <td className="border px-4 py-3">{item.phone}</td>
               <td className="border px-4 py-3">{item.role}</td>
               <td className="border px-4 py-3">
                 <span className={`inline-block px-2 py-1 rounded-full text-xs font-medium ${

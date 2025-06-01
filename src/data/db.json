@@ -3,14 +3,16 @@
     {
       "name": "Иван Петров",
       "email": "ivan@example.com",
+      "phone": "+7 (915) 123-45-67",
       "role": "Администратор",
-      "status": "inactive",
+      "status": "active",
       "id": "1"
     },
     {
       "id": "2",
       "name": "Мария Сидорова",
       "email": "maria@example.com",
+      "phone": "+7 (925) 987-65-43",
       "role": "Пользователь",
       "status": "active",
       "createdAt": "2024-01-16"
@@ -19,6 +21,7 @@
       "id": "3",
       "name": "Алексей Иванов",
       "email": "alex@example.com",
+      "phone": "+7 (916) 555-77-88",
       "role": "Модератор",
       "status": "inactive",
       "createdAt": "2024-01-17"
@@ -27,6 +30,7 @@
       "id": "4",
       "name": "Елена Козлова",
       "email": "elena@example.com",
+      "phone": "+7 (903) 456-78-90",
       "role": "Пользователь",
       "status": "active",
       "createdAt": "2024-01-18"
@@ -35,6 +39,7 @@
       "id": "5",
       "name": "Дмитрий Смирнов",
       "email": "dmitry@example.com",
+      "phone": "+7 (917) 321-09-87",
       "role": "Администратор",
       "status": "active",
       "createdAt": "2024-01-19"
@@ -43,6 +48,7 @@
       "id": "6",
       "name": "Анна Волкова",
       "email": "anna@example.com",
+      "phone": "+7 (926) 654-32-10",
       "role": "Пользователь",
       "status": "inactive",
       "createdAt": "2024-01-20"
