@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "name": "Иван Петров",
+      "email": "ivan@example.com",
+      "role": "Администратор",
+      "status": "inactive",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Мария Сидорова",
+      "email": "maria@example.com",
+      "role": "Пользователь",
+      "status": "active",
+      "createdAt": "2024-01-16"
+    },
+    {
+      "id": "3",
+      "name": "Алексей Иванов",
+      "email": "alex@example.com",
+      "role": "Модератор",
+      "status": "inactive",
+      "createdAt": "2024-01-17"
+    },
+    {
+      "id": "4",
+      "name": "Елена Козлова",
+      "email": "elena@example.com",
+      "role": "Пользователь",
+      "status": "active",
+      "createdAt": "2024-01-18"
+    },
+    {
+      "id": "5",
+      "name": "Дмитрий Смирнов",
+      "email": "dmitry@example.com",
+      "role": "Администратор",
+      "status": "active",
+      "createdAt": "2024-01-19"
+    },
+    {
+      "id": "6",
+      "name": "Анна Волкова",
+      "email": "anna@example.com",
+      "role": "Пользователь",
+      "status": "inactive",
+      "createdAt": "2024-01-20"
+    }
+  ]
+}
